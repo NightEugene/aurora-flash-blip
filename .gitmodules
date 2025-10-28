@@ -14,3 +14,6 @@
 	path = libsdl
 	url = git@github.com:savegame/SDL.git
 	branch = auroraos-sdl2
+[submodule "flash-blip"]
+	path = flash-blip
+	url = git@github.com:NightEugene/flash-blip.git
