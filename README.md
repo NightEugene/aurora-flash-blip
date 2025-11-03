@@ -1,35 +1,14 @@
-# LÖVE (Love2D) for AuroraOS
+# Flash-Blip for AuroraOS
 
-LÖVE is an *awesome* framework you can use to make 2D games in Lua. It's free, open-source, 
-and works on Windows, macOS, Linux, Android, and iOS.  
+Port of [Flash-Blip](https://github.com/plinkr/flash-blip) to [AuroraOS](http://auroraos.ru)
 
-[LÖVE official page](https://love2d.org).
+<div align="center">
+  <img src="aurora_flash-blip_screenshot.png" alt="AuroraOS ScreenShot" width="240" style="display:inline-block; margin-right:8px; border-radius:8px;"/>
+  <img src="aurora_flash-blip_screenshot2.png" alt="AuroraOS ScreenShot2" width="240" style="display:inline-block; margin-right:8px; border-radius:8px;"/>
+  <img src="aurora_flash-blip_screenshot3.png" alt="AuroraOS ScreenShot3" width="240" style="display:inline-block; margin-right:8px; border-radius:8px;"/>
+</div>
 
-Port of LÖVE for AuroraOS and SailfishOS made by sashikknox.  
-[Donate to sashikknox](https://boosty.to/sashikknox)  
-
-# Использование шаблона
-1. Весь код и ресурсы проект распологайте в папке `game`, так что бы был доступен файл `game/main.lua`
-2. В папку `icons` положите `*.png` файлы со всему размерами иконок вашего приложения, заменив те что 
-там уже лежат. Цифра в имени файла обозначает размер иконки, т.е. 86x86, 108x108, 128x128, 172x172 
-пикселей.
-3. Отредактируйте `rpm/game.spec` файл, и поставьте туда свои значения:
-
-| паравметр | значение |
-| :--| :--|
-|%define _app_orgname|Обратное доменное имя организации, например `ru.sashikknox`|
-|%define _app_appname|Название приложения, например `AwesomeGame`|
-|%define _app_launcher_name|Название приложения в сетке прилоежний, например `Офигенная игра`|
-|Summary:|Тут может быть описание вашего прилоежния, краткое|
-|Release:|Cюда пишете инкрементируемый номер версии вашего приложения, например `1`|
-|Version:|Тут может быть и текстовое значение версии, но по калссике сюда идет версия вида `1.0.0`, но можете обозвать как угодно|
-|License:|Сюда можете вписать лицензию вашего проекта|
-
-Далее при сборке пакета содержимаое папки game упакуется в `game.love` файл, который уже будет 
-запускать движок Love2D, а так же сгенерирует все необходимые файлы для работ вашего проекта 
-в ОС Аврора.
-
-# Build 
+# Build
 - download and install [AuroraSDK](https://developer.auroraos.ru/doc/software_development/sdk/downloads)
 - list avaliable targets (use sfdk tool from SDK)
     ```
